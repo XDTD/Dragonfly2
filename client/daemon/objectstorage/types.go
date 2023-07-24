@@ -33,3 +33,25 @@ type PutObjectRequset struct {
 type GetObjectQuery struct {
 	Filter string `form:"filter" binding:"omitempty"`
 }
+
+type GetObjectsListQuery struct {
+	// A delimiter is a character you use to group keys.
+	Delimiter string `form:"delimiter" binding:"omitempty"`
+
+	// Marker is where you want  to start listing from. Marker can be any key in the bucket.
+	Marker string `form:"marker" binding:"omitempty"`
+
+	// Sets the maximum number of keys returned in the response.
+	Limit int64 `form:"limit" binding:"omitempty"`
+
+	// Limits the response to keys that begin with the specified prefix.
+	Prefix string `form:"prefix" binding:"omitempty"`
+}
+
+type CopyObjectRequest struct {
+	// Source is a required field
+	Source string `form:"file" binding:"required"`
+
+	// CopySource is a required field
+	Destination string `form:"file" binding:"required"`
+}

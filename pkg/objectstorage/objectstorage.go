@@ -50,6 +50,12 @@ type ObjectMetadata struct {
 
 	// Digest is object digest.
 	Digest string
+
+	// LastModifiedTime is Last modified time.
+	LastModifiedTime time.Time
+
+	// StorageClass is object Storage Class.
+	StorageClass string
 }
 
 // BucketMetadata provides metadata of bucket.
@@ -91,10 +97,13 @@ type ObjectStorage interface {
 	DeleteObject(ctx context.Context, bucketName, objectKey string) error
 
 	// ListObjectMetadatas returns metadata of objects.
-	ListObjectMetadatas(ctx context.Context, bucketName, prefix, marker string, limit int64) ([]*ObjectMetadata, error)
+	ListObjectMetadatas(ctx context.Context, bucketName, prefix, marker, delimiter string, limit int64) ([]*ObjectMetadata, error)
 
 	// IsObjectExist returns whether the object exists.
 	IsObjectExist(ctx context.Context, bucketName, objectKey string) (bool, error)
+
+	// CopyObject copy object from source to destination
+	CopyObject(ctx context.Context, bucketName, source, destination string) error
 
 	// GetSignURL returns sign url of object.
 	GetSignURL(ctx context.Context, bucketName, objectKey string, method Method, expire time.Duration) (string, error)

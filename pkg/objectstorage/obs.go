@@ -114,6 +114,8 @@ func (o *obs) GetObjectMetadata(ctx context.Context, bucketName, objectKey strin
 		ContentType:        metadata.ContentType,
 		ETag:               metadata.ETag,
 		Digest:             metadata.Metadata[MetaDigest],
+		LastModifiedTime:   metadata.LastModified,
+		StorageClass:       o.getDefaultStorageClass(metadata.StorageClass),
 	}, true, nil
 }
 
@@ -157,11 +159,12 @@ func (o *obs) DeleteObject(ctx context.Context, bucketName, objectKey string) er
 }
 
 // ListObjectMetadatas returns metadata of objects.
-func (o *obs) ListObjectMetadatas(ctx context.Context, bucketName, prefix, marker string, limit int64) ([]*ObjectMetadata, error) {
+func (o *obs) ListObjectMetadatas(ctx context.Context, bucketName, prefix, marker, delimiter string, limit int64) ([]*ObjectMetadata, error) {
 	resp, err := o.client.ListObjects(&huaweiobs.ListObjectsInput{
 		ListObjsInput: huaweiobs.ListObjsInput{
-			Prefix:  prefix,
-			MaxKeys: int(limit),
+			Prefix:    prefix,
+			MaxKeys:   int(limit),
+			Delimiter: delimiter,
 		},
 		Bucket: bucketName,
 		Marker: marker,
@@ -173,12 +176,29 @@ func (o *obs) ListObjectMetadatas(ctx context.Context, bucketName, prefix, marke
 	var metadatas []*ObjectMetadata
 	for _, object := range resp.Contents {
 		metadatas = append(metadatas, &ObjectMetadata{
-			Key:  object.Key,
-			ETag: object.ETag,
+			Key:              object.Key,
+			ETag:             object.ETag,
+			LastModifiedTime: object.LastModified,
+			StorageClass:     o.getDefaultStorageClass(object.StorageClass),
 		})
 	}
 
 	return metadatas, nil
+}
+
+func (o *obs) CopyObject(ctx context.Context, bucketName, source, destination string) error {
+	params := &huaweiobs.CopyObjectInput{
+		ObjectOperationInput: huaweiobs.ObjectOperationInput{
+			Bucket: bucketName,
+			Key:    destination,
+		},
+		CopySourceBucket: bucketName,
+		CopySourceKey:    source,
+	}
+
+	_, err := o.client.CopyObject(params)
+
+	return err
 }
 
 // IsObjectExist returns whether the object exists.
@@ -224,4 +244,17 @@ func (o *obs) GetSignURL(ctx context.Context, bucketName, objectKey string, meth
 	}
 
 	return resp.SignedUrl, nil
+}
+
+func (o *obs) getDefaultStorageClass(storageClass huaweiobs.StorageClassType) string {
+	var sc string
+	switch storageClass {
+	case "":
+		sc = string(huaweiobs.StorageClassStandard)
+	case huaweiobs.StorageClassWarm:
+		sc = string("STANDARD_IA")
+	default:
+		sc = string(storageClass)
+	}
+	return sc
 }

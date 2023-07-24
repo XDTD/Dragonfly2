@@ -21,6 +21,7 @@ package objectstorage
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"fmt"
 	"io"
 	"math"
@@ -174,8 +175,10 @@ func (o *objectStorage) initRouter(cfg *config.DaemonOption, logDir string) *gin
 	b := r.Group(RouterGroupBuckets)
 	b.HEAD(":id/objects/*object_key", o.headObject)
 	b.GET(":id/objects/*object_key", o.getObject)
+	b.GET(":id/objects/list", o.getObjectList)
 	b.DELETE(":id/objects/*object_key", o.destroyObject)
 	b.PUT(":id/objects/*object_key", o.putObject)
+	b.PUT(":id/objects/copy", o.copyObject)
 
 	return r
 }
@@ -222,7 +225,8 @@ func (o *objectStorage) headObject(ctx *gin.Context) {
 	ctx.Header(headers.ContentType, meta.ContentType)
 	ctx.Header(headers.ETag, meta.ETag)
 	ctx.Header(config.HeaderDragonflyObjectMetaDigest, meta.Digest)
-
+	ctx.Header(config.HeaderDragonflyObjectMetaLastModifiedTime, meta.LastModifiedTime.Format(http.TimeFormat))
+	ctx.Header(config.HeaderDragonflyObjectMetaStorageClass, meta.StorageClass)
 	ctx.Status(http.StatusOK)
 	return
 }
@@ -474,6 +478,84 @@ func (o *objectStorage) putObject(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusUnprocessableEntity, gin.H{"errors": fmt.Sprintf("unknow mode %d", mode)})
 	return
+}
+
+// headObjects uses to list objects meta data.
+func (o *objectStorage) getObjectList(ctx *gin.Context) {
+	var params ObjectParams
+	if err := ctx.ShouldBindUri(&params); err != nil {
+		ctx.JSON(http.StatusUnprocessableEntity, gin.H{"errors": err.Error()})
+		return
+	}
+
+	var query GetObjectsListQuery
+	if err := ctx.ShouldBindQuery(&query); err != nil {
+		ctx.JSON(http.StatusUnprocessableEntity, gin.H{"errors": err.Error()})
+		return
+	}
+
+	var (
+		bucketName = params.ID
+		prefix     = query.Prefix
+		marker     = query.Marker
+		delimiter  = query.Delimiter
+		limit      = query.Limit
+	)
+
+	client, err := o.client()
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
+		return
+	}
+
+	metadataList, err := client.ListObjectMetadatas(ctx, bucketName, prefix, marker, delimiter, limit)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
+		return
+	}
+
+	metadataBytes, err := json.Marshal(metadataList)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, string(metadataBytes))
+	ctx.Status(http.StatusOK)
+}
+
+func (o *objectStorage) copyObject(ctx *gin.Context) {
+	var params ObjectParams
+	if err := ctx.ShouldBindUri(&params); err != nil {
+		ctx.JSON(http.StatusUnprocessableEntity, gin.H{"errors": err.Error()})
+		return
+	}
+
+	var form CopyObjectRequest
+	if err := ctx.ShouldBind(&params); err != nil {
+		ctx.JSON(http.StatusUnprocessableEntity, gin.H{"errors": err.Error()})
+		return
+	}
+
+	var (
+		bucketName  = params.ID
+		source      = form.Source
+		destination = form.Destination
+	)
+
+	client, err := o.client()
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
+		return
+	}
+
+	err = client.CopyObject(ctx, bucketName, source, destination)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
+		return
+	}
+
+	ctx.Status(http.StatusOK)
 }
 
 // getAvailableSeedPeer uses to calculate md5 with file header.

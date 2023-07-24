@@ -21,6 +21,7 @@ package dfstore
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
@@ -29,6 +30,7 @@ import (
 	"net/url"
 	"path/filepath"
 	"strconv"
+	"time"
 
 	"github.com/go-http-utils/headers"
 
@@ -50,6 +52,12 @@ type Dfstore interface {
 
 	// GetObjectWithContext returns data of object.
 	GetObjectWithContext(ctx context.Context, input *GetObjectInput) (io.ReadCloser, error)
+
+	// GetObjectListWithContext returns *http.Request of getting object list.
+	GetObjectListWithContext(ctx context.Context, input *GetObjectListInput) ([]*pkgobjectstorage.ObjectMetadata, error)
+
+	// GetObjectListRequestWithContext returns metadata of object list
+	GetObjectListRequestWithContext(ctx context.Context, input *GetObjectListInput) (*http.Request, error)
 
 	// PutObjectRequestWithContext returns *http.Request of putting object.
 	PutObjectRequestWithContext(ctx context.Context, input *PutObjectInput) (*http.Request, error)
@@ -165,6 +173,8 @@ func (dfs *dfstore) GetObjectMetadataWithContext(ctx context.Context, input *Get
 		return nil, err
 	}
 
+	lastModifiedTime, _ := time.Parse(http.TimeFormat, resp.Header.Get(config.HeaderDragonflyObjectMetaLastModifiedTime))
+
 	return &pkgobjectstorage.ObjectMetadata{
 		ContentDisposition: resp.Header.Get(headers.ContentDisposition),
 		ContentEncoding:    resp.Header.Get(headers.ContentEncoding),
@@ -173,6 +183,7 @@ func (dfs *dfstore) GetObjectMetadataWithContext(ctx context.Context, input *Get
 		ContentType:        resp.Header.Get(headers.ContentType),
 		ETag:               resp.Header.Get(headers.ContentType),
 		Digest:             resp.Header.Get(config.HeaderDragonflyObjectMetaDigest),
+		LastModifiedTime:   lastModifiedTime,
 	}, nil
 }
 
@@ -255,6 +266,115 @@ func (dfs *dfstore) GetObjectWithContext(ctx context.Context, input *GetObjectIn
 	}
 
 	return resp.Body, nil
+}
+
+// GetObjectListInput is used to construct request of getting object list.
+type GetObjectListInput struct {
+	// BucketName is the bucket name.
+	BucketName string
+
+	// Prefix filters the objects by their key's prefix.
+	Prefix string
+
+	// Marker is used for pagination, indicating the object key to start listing from.
+	Marker string
+
+	// Delimiter is used to create a hierarchical structure, simulating directories in the listing results.
+	Delimiter string
+
+	// Limit specifies the maximum number of objects to be returned in a single listing request.
+	Limit string
+}
+
+// Validate validates GetObjectListInput fields.
+func (i *GetObjectListInput) Validate() error {
+	if i.Prefix == "" {
+		return errors.New("invalid Prefix")
+
+	}
+
+	if i.Marker == "" {
+		return errors.New("invalid Marker")
+	}
+
+	if i.Delimiter == "" {
+		return errors.New("invalid Delimiter")
+	}
+
+	if i.Limit == "" {
+		return errors.New("invalid Limit")
+	}
+
+	return nil
+}
+
+func (dfs *dfstore) GetObjectListRequestWithContext(ctx context.Context, input *GetObjectListInput) (*http.Request, error) {
+	if err := input.Validate(); err != nil {
+		return nil, err
+	}
+
+	u, err := url.Parse(dfs.endpoint)
+	if err != nil {
+		return nil, err
+	}
+
+	u.Path = filepath.Join("buckets", input.BucketName, "objects")
+
+	query := u.Query()
+	if input.Prefix != "" {
+		query.Set("prefix", input.Prefix)
+	}
+
+	if input.Marker != "" {
+		query.Set("marker", input.Marker)
+	}
+
+	if input.Delimiter != "" {
+		query.Set("delimiter", input.Delimiter)
+	}
+
+	if input.Limit != "" {
+		query.Set("limit", input.Limit)
+	}
+
+	u.RawQuery = query.Encode()
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, u.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// GetObjectRequestWithContext returns *http.Request of getting object.
+func (dfs *dfstore) GetObjectListWithContext(ctx context.Context, input *GetObjectListInput) ([]*pkgobjectstorage.ObjectMetadata, error) {
+	req, err := dfs.GetObjectListRequestWithContext(ctx, input)
+	if err != nil {
+		return nil, err
+	}
+
+	resp, err := dfs.httpClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode/100 != 2 {
+		return nil, fmt.Errorf("bad response status %s", resp.Status)
+	}
+
+	var metadataBytes []byte
+	if metadataBytes, err = io.ReadAll(resp.Body); err != nil {
+		return nil, err
+	}
+
+	var metadataList []*pkgobjectstorage.ObjectMetadata
+
+	if err := json.Unmarshal(metadataBytes, &metadataList); err != nil {
+		return nil, err
+	}
+	return metadataList, nil
 }
 
 // PutObjectInput is used to construct request of putting object.
