@@ -1,4 +1,4 @@
-module d7y.io/dragonfly/v2
+module github.com/XDTD/Dragonfly2
 
 go 1.20
 
