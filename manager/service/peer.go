@@ -20,7 +20,7 @@ import (
 	"context"
 	"strings"
 
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
 )
 
 func (s *service) GetPeers(ctx context.Context) ([]string, error) {

@@ -27,8 +27,8 @@ import (
 
 	"github.com/colinmarc/hdfs/v2"
 
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 const (

@@ -7,8 +7,8 @@ package mocks
 import (
 	reflect "reflect"
 
-	networktopology "d7y.io/dragonfly/v2/scheduler/networktopology"
-	resource "d7y.io/dragonfly/v2/scheduler/resource"
+	networktopology "github.com/XDTD/Dragonfly2/scheduler/networktopology"
+	resource "github.com/XDTD/Dragonfly2/scheduler/resource"
 	gomock "github.com/golang/mock/gomock"
 )
 

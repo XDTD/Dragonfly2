@@ -21,7 +21,7 @@ import (
 	"os"
 	"os/user"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 // HomeDir is the path to the user's home directory.

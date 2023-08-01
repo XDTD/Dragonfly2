@@ -24,10 +24,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	internaljob "d7y.io/dragonfly/v2/internal/job"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	internaljob "github.com/XDTD/Dragonfly2/internal/job"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 const (

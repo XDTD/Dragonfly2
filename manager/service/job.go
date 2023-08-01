@@ -23,12 +23,12 @@ import (
 
 	machineryv1tasks "github.com/RichardKnop/machinery/v1/tasks"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/retry"
-	"d7y.io/dragonfly/v2/pkg/slices"
-	"d7y.io/dragonfly/v2/pkg/structure"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/retry"
+	"github.com/XDTD/Dragonfly2/pkg/slices"
+	"github.com/XDTD/Dragonfly2/pkg/structure"
 )
 
 func (s *service) CreatePreheatJob(ctx context.Context, json types.CreatePreheatJobRequest) (*models.Job, error) {

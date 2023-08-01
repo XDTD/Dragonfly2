@@ -25,7 +25,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 type Bytes int64

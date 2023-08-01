@@ -36,17 +36,17 @@ import (
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 	schedulerv1mocks "d7y.io/api/v2/pkg/apis/scheduler/v1/mocks"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/storage"
-	"d7y.io/dragonfly/v2/client/daemon/test"
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/internal/dferrors"
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	schedulerclient "d7y.io/dragonfly/v2/pkg/rpc/scheduler/client"
-	clientmocks "d7y.io/dragonfly/v2/pkg/rpc/scheduler/client/mocks"
-	"d7y.io/dragonfly/v2/pkg/source"
-	"d7y.io/dragonfly/v2/pkg/source/clients/httpprotocol"
-	sourcemocks "d7y.io/dragonfly/v2/pkg/source/mocks"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	schedulerclient "github.com/XDTD/Dragonfly2/pkg/rpc/scheduler/client"
+	clientmocks "github.com/XDTD/Dragonfly2/pkg/rpc/scheduler/client/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source/clients/httpprotocol"
+	sourcemocks "github.com/XDTD/Dragonfly2/pkg/source/mocks"
 )
 
 func setupResumeStreamTaskComponents(ctrl *gomock.Controller, opt componentsOption) (

@@ -19,8 +19,8 @@ package log
 import (
 	"go.uber.org/zap/zapcore"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfpath"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfpath"
 )
 
 // SetCoreLevel sets core log level, export internal SetCoreLevel for using dragonfly as library

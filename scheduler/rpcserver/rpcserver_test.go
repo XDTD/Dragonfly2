@@ -24,12 +24,12 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/scheduler/config"
-	configmocks "d7y.io/dragonfly/v2/scheduler/config/mocks"
-	networktopologymocks "d7y.io/dragonfly/v2/scheduler/networktopology/mocks"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling/mocks"
-	storagemocks "d7y.io/dragonfly/v2/scheduler/storage/mocks"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	configmocks "github.com/XDTD/Dragonfly2/scheduler/config/mocks"
+	networktopologymocks "github.com/XDTD/Dragonfly2/scheduler/networktopology/mocks"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling/mocks"
+	storagemocks "github.com/XDTD/Dragonfly2/scheduler/storage/mocks"
 )
 
 var (

@@ -8,8 +8,8 @@ import (
 	reflect "reflect"
 
 	manager "d7y.io/api/v2/pkg/apis/manager/v2"
-	types "d7y.io/dragonfly/v2/manager/types"
-	config "d7y.io/dragonfly/v2/scheduler/config"
+	types "github.com/XDTD/Dragonfly2/manager/types"
+	config "github.com/XDTD/Dragonfly2/scheduler/config"
 	gomock "github.com/golang/mock/gomock"
 	resolver "google.golang.org/grpc/resolver"
 )

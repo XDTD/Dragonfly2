@@ -40,16 +40,16 @@ import (
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 	schedulerv2mocks "d7y.io/api/v2/pkg/apis/scheduler/v2/mocks"
 
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
-	pkgtypes "d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	configmocks "d7y.io/dragonfly/v2/scheduler/config/mocks"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling/evaluator"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
+	pkgtypes "github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	configmocks "github.com/XDTD/Dragonfly2/scheduler/config/mocks"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling/evaluator"
 )
 
 var (

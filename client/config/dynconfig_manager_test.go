@@ -35,7 +35,7 @@ import (
 
 	managerv1 "d7y.io/api/v2/pkg/apis/manager/v1"
 
-	"d7y.io/dragonfly/v2/pkg/rpc/manager/client/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/manager/client/mocks"
 )
 
 func TestDynconfigManager_GetResolveSchedulerAddrs(t *testing.T) {

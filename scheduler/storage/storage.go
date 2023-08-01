@@ -33,8 +33,8 @@ import (
 
 	"github.com/gocarina/gocsv"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	pkgio "d7y.io/dragonfly/v2/pkg/io"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	pkgio "github.com/XDTD/Dragonfly2/pkg/io"
 )
 
 const (

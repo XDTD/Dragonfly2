@@ -34,10 +34,10 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/daemon/storage"
-	"d7y.io/dragonfly/v2/client/daemon/storage/mocks"
-	"d7y.io/dragonfly/v2/client/daemon/test"
-	"d7y.io/dragonfly/v2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage/mocks"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
 )
 
 func TestReuseFilePeerTask(t *testing.T) {

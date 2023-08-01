@@ -32,10 +32,10 @@ import (
 	trainerv1 "d7y.io/api/v2/pkg/apis/trainer/v1"
 	trainerv1mocks "d7y.io/api/v2/pkg/apis/trainer/v1/mocks"
 
-	managerclientmocks "d7y.io/dragonfly/v2/pkg/rpc/manager/client/mocks"
-	trainerclientmocks "d7y.io/dragonfly/v2/pkg/rpc/trainer/client/mocks"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	storagemocks "d7y.io/dragonfly/v2/scheduler/storage/mocks"
+	managerclientmocks "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client/mocks"
+	trainerclientmocks "github.com/XDTD/Dragonfly2/pkg/rpc/trainer/client/mocks"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	storagemocks "github.com/XDTD/Dragonfly2/scheduler/storage/mocks"
 )
 
 var (

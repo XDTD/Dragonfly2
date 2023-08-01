@@ -24,9 +24,9 @@ import (
 
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
 )
 
 type SeedTaskRequest struct {

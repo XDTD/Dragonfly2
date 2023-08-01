@@ -8,7 +8,7 @@ import (
 	io "io"
 	reflect "reflect"
 
-	storage "d7y.io/dragonfly/v2/scheduler/storage"
+	storage "github.com/XDTD/Dragonfly2/scheduler/storage"
 	gomock "github.com/golang/mock/gomock"
 )
 

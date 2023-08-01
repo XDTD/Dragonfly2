@@ -11,8 +11,8 @@ import (
 
 	v1 "d7y.io/api/v2/pkg/apis/common/v1"
 	v10 "d7y.io/api/v2/pkg/apis/scheduler/v1"
-	storage "d7y.io/dragonfly/v2/client/daemon/storage"
-	dflog "d7y.io/dragonfly/v2/internal/dflog"
+	storage "github.com/XDTD/Dragonfly2/client/daemon/storage"
+	dflog "github.com/XDTD/Dragonfly2/internal/dflog"
 	gomock "github.com/golang/mock/gomock"
 	status "google.golang.org/grpc/status"
 )

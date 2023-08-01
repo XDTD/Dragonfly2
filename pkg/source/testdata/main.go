@@ -21,7 +21,7 @@ import (
 	"io"
 	"os"
 
-	"d7y.io/dragonfly/v2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 func main() {

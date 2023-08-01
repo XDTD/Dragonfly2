@@ -34,9 +34,9 @@ import (
 
 	"github.com/go-http-utils/headers"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/objectstorage"
-	pkgobjectstorage "d7y.io/dragonfly/v2/pkg/objectstorage"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/objectstorage"
+	pkgobjectstorage "github.com/XDTD/Dragonfly2/pkg/objectstorage"
 )
 
 // Dfstore is the interface used for object storage.

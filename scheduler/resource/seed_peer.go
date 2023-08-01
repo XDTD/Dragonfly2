@@ -29,12 +29,12 @@ import (
 	commonv2 "d7y.io/api/v2/pkg/apis/common/v2"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/pkg/rpc/common"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/metrics"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/common"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/metrics"
 )
 
 const (

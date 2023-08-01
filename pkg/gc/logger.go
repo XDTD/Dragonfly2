@@ -19,7 +19,7 @@
 package gc
 
 import (
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 // Logger is the interface used in GC for logging.

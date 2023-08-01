@@ -19,7 +19,7 @@ package searcher
 import (
 	"errors"
 
-	"d7y.io/dragonfly/v2/internal/dfplugin"
+	"github.com/XDTD/Dragonfly2/internal/dfplugin"
 )
 
 const (

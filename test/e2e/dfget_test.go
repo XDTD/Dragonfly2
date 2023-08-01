@@ -26,8 +26,8 @@ import (
 	. "github.com/onsi/ginkgo/v2" //nolint
 	. "github.com/onsi/gomega"    //nolint
 
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/test/e2e/e2eutil"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/test/e2e/e2eutil"
 )
 
 var _ = Describe("Download with dfget and proxy", func() {

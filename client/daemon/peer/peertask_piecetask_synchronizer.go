@@ -34,11 +34,11 @@ import (
 	dfdaemonv1 "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	dfdaemonclient "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/client"
+	"github.com/XDTD/Dragonfly2/client/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	dfdaemonclient "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/client"
 )
 
 type pieceTaskSyncManager struct {

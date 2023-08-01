@@ -24,8 +24,8 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/internal/dferrors"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
 )
 
 // when scheduler is not available, use dummySchedulerClient to back source

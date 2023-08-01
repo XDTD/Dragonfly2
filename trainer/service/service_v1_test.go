@@ -34,10 +34,10 @@ import (
 	trainerv1 "d7y.io/api/v2/pkg/apis/trainer/v1"
 	trainerv1mocks "d7y.io/api/v2/pkg/apis/trainer/v1/mocks"
 
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/trainer/config"
-	storagemocks "d7y.io/dragonfly/v2/trainer/storage/mocks"
-	trainingmocks "d7y.io/dragonfly/v2/trainer/training/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	storagemocks "github.com/XDTD/Dragonfly2/trainer/storage/mocks"
+	trainingmocks "github.com/XDTD/Dragonfly2/trainer/training/mocks"
 )
 
 var (

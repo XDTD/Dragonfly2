@@ -25,9 +25,9 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/resource"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
 )
 
 const (

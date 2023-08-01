@@ -17,7 +17,7 @@
 package idgen
 
 import (
-	"d7y.io/dragonfly/v2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
 )
 
 const (

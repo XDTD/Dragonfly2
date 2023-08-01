@@ -29,8 +29,8 @@ import (
 	. "github.com/onsi/gomega"    //nolint
 	"k8s.io/component-base/featuregate"
 
-	"d7y.io/dragonfly/v2/test/e2e/e2eutil"
-	_ "d7y.io/dragonfly/v2/test/e2e/manager"
+	"github.com/XDTD/Dragonfly2/test/e2e/e2eutil"
+	_ "github.com/XDTD/Dragonfly2/test/e2e/manager"
 )
 
 var (

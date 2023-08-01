@@ -22,7 +22,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	// nolint
-	_ "d7y.io/dragonfly/v2/manager/models"
+	_ "github.com/XDTD/Dragonfly2/manager/models"
 )
 
 // @Summary Get Peers

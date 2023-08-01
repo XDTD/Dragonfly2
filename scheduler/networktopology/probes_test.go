@@ -29,11 +29,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/atomic"
 
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
 )
 
 var (

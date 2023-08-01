@@ -36,11 +36,11 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	"d7y.io/dragonfly/v2/client/daemon/test"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/pkg/source"
-	"d7y.io/dragonfly/v2/pkg/source/clients/httpprotocol"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source/clients/httpprotocol"
 )
 
 func TestPieceDownloader_isConnectionError(t *testing.T) {

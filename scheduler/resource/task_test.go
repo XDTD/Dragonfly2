@@ -31,10 +31,10 @@ import (
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 	v2mocks "d7y.io/api/v2/pkg/apis/scheduler/v2/mocks"
 
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/pkg/types"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 var (

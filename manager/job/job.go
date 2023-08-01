@@ -17,8 +17,8 @@
 package job
 
 import (
-	internaljob "d7y.io/dragonfly/v2/internal/job"
-	"d7y.io/dragonfly/v2/manager/config"
+	internaljob "github.com/XDTD/Dragonfly2/internal/job"
+	"github.com/XDTD/Dragonfly2/manager/config"
 )
 
 type Job struct {

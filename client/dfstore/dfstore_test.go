@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"d7y.io/dragonfly/v2/client/config"
+	"github.com/XDTD/Dragonfly2/client/config"
 )
 
 func GetDfstoreClient() (Dfstore, error) {

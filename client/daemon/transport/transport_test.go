@@ -27,8 +27,8 @@ import (
 	"github.com/golang/mock/gomock"
 	testifyassert "github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/client/daemon/peer"
-	"d7y.io/dragonfly/v2/client/daemon/test"
+	"github.com/XDTD/Dragonfly2/client/daemon/peer"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
 )
 
 func TestTransport_RoundTrip(t *testing.T) {

@@ -19,7 +19,7 @@ package idgen
 import (
 	"fmt"
 
-	"d7y.io/dragonfly/v2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
 )
 
 // HostIDV1 generates v1 version of host id.

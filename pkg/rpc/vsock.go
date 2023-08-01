@@ -25,7 +25,7 @@ import (
 
 	"github.com/mdlayher/vsock"
 
-	"d7y.io/dragonfly/v2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
 )
 
 // VsockDialer is the dialer for vsock.

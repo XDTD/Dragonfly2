@@ -30,7 +30,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	schedulerstorage "d7y.io/dragonfly/v2/scheduler/storage"
+	schedulerstorage "github.com/XDTD/Dragonfly2/scheduler/storage"
 )
 
 var mockModelKey = "bar"

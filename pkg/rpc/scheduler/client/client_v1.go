@@ -33,12 +33,12 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	pkgbalancer "d7y.io/dragonfly/v2/pkg/balancer"
-	"d7y.io/dragonfly/v2/pkg/resolver"
-	"d7y.io/dragonfly/v2/pkg/rpc"
-	"d7y.io/dragonfly/v2/pkg/rpc/common"
+	"github.com/XDTD/Dragonfly2/client/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	pkgbalancer "github.com/XDTD/Dragonfly2/pkg/balancer"
+	"github.com/XDTD/Dragonfly2/pkg/resolver"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/common"
 )
 
 // GetV1 returns v1 version of the scheduler client.

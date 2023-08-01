@@ -10,7 +10,7 @@ import (
 	time "time"
 
 	dfdaemon "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
-	config "d7y.io/dragonfly/v2/client/config"
+	config "github.com/XDTD/Dragonfly2/client/config"
 	gomock "github.com/golang/mock/gomock"
 )
 

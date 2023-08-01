@@ -25,9 +25,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"google.golang.org/grpc"
 
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 // Variables declared for metrics.

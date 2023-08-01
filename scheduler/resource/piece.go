@@ -21,7 +21,7 @@ import (
 
 	commonv2 "d7y.io/api/v2/pkg/apis/common/v2"
 
-	"d7y.io/dragonfly/v2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
 )
 
 // IsPieceBackToSource returns whether the piece is downloaded back-to-source.

@@ -30,10 +30,10 @@ import (
 	"github.com/yl2chen/cidranger"
 	"go.uber.org/zap"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/pkg/math"
-	"d7y.io/dragonfly/v2/pkg/types"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/pkg/math"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 const (
