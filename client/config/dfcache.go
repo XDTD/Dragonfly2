@@ -28,10 +28,10 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"d7y.io/dragonfly/v2/cmd/dependency/base"
-	"d7y.io/dragonfly/v2/internal/dferrors"
-	"d7y.io/dragonfly/v2/pkg/os/user"
-	"d7y.io/dragonfly/v2/pkg/strings"
+	"github.com/XDTD/Dragonfly2/cmd/dependency/base"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
+	"github.com/XDTD/Dragonfly2/pkg/os/user"
+	"github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 type DfcacheConfig = CacheOption

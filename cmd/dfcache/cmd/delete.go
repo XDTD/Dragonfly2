@@ -19,9 +19,9 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/dfcache"
-	"d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/client"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/dfcache"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/client"
 )
 
 const deleteDesc = "delete file from P2P cache system"

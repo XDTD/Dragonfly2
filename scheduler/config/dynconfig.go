@@ -37,13 +37,13 @@ import (
 
 	managerv2 "d7y.io/api/v2/pkg/apis/manager/v2"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	dc "d7y.io/dragonfly/v2/internal/dynconfig"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	healthclient "d7y.io/dragonfly/v2/pkg/rpc/health/client"
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
-	"d7y.io/dragonfly/v2/pkg/slices"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	dc "github.com/XDTD/Dragonfly2/internal/dynconfig"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	healthclient "github.com/XDTD/Dragonfly2/pkg/rpc/health/client"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
+	"github.com/XDTD/Dragonfly2/pkg/slices"
 )
 
 var (

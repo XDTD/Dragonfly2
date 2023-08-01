@@ -27,9 +27,9 @@ import (
 
 	inferencev1 "d7y.io/api/v2/pkg/apis/inference/v1"
 
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
 )
 
 func (s *service) DestroyModel(ctx context.Context, id uint) error {

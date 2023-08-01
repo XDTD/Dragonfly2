@@ -27,7 +27,7 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 type peerDesc struct {

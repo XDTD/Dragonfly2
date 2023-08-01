@@ -23,8 +23,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/dfstore"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/dfstore"
 )
 
 var removeDescription = "remove object from P2P storage system."

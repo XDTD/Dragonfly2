@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 // Safe call function.

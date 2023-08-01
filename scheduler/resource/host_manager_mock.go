@@ -7,7 +7,7 @@ package resource
 import (
 	reflect "reflect"
 
-	set "d7y.io/dragonfly/v2/pkg/container/set"
+	set "github.com/XDTD/Dragonfly2/pkg/container/set"
 	gomock "github.com/golang/mock/gomock"
 )
 

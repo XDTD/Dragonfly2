@@ -20,9 +20,9 @@ import (
 	"context"
 	"errors"
 
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/structure"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/structure"
 )
 
 func (s *service) CreateSeedPeerCluster(ctx context.Context, json types.CreateSeedPeerClusterRequest) (*models.SeedPeerCluster, error) {

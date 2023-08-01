@@ -34,11 +34,11 @@ import (
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling/evaluator"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling/evaluator"
 )
 
 type Scheduling interface {

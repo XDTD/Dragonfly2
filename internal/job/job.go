@@ -31,7 +31,7 @@ import (
 	machineryv1tasks "github.com/RichardKnop/machinery/v1/tasks"
 	"github.com/go-redis/redis/v8"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 type Config struct {

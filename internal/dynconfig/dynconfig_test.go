@@ -27,7 +27,7 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/internal/dynconfig/mocks"
+	"github.com/XDTD/Dragonfly2/internal/dynconfig/mocks"
 )
 
 type TestDynconfig struct {

@@ -38,12 +38,12 @@ import (
 	"github.com/google/uuid"
 	"go.opentelemetry.io/otel/trace"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	internaljob "d7y.io/dragonfly/v2/internal/job"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	internaljob "github.com/XDTD/Dragonfly2/internal/job"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
 )
 
 type PreheatType string

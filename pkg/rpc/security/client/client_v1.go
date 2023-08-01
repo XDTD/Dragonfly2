@@ -32,9 +32,9 @@ import (
 
 	securityv1 "d7y.io/api/v2/pkg/apis/security/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	healthclient "d7y.io/dragonfly/v2/pkg/rpc/health/client"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	healthclient "github.com/XDTD/Dragonfly2/pkg/rpc/health/client"
 )
 
 const (

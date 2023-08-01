@@ -27,7 +27,7 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 type PieceDispatcher interface {

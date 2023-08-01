@@ -43,12 +43,12 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/metrics"
-	"d7y.io/dragonfly/v2/client/daemon/peer"
-	"d7y.io/dragonfly/v2/client/daemon/transport"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/metrics"
+	"github.com/XDTD/Dragonfly2/client/daemon/peer"
+	"github.com/XDTD/Dragonfly2/client/daemon/transport"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 var (

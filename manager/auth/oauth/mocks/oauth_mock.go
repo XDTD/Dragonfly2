@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	oauth "d7y.io/dragonfly/v2/manager/auth/oauth"
+	oauth "github.com/XDTD/Dragonfly2/manager/auth/oauth"
 	gomock "github.com/golang/mock/gomock"
 	oauth2 "golang.org/x/oauth2"
 )

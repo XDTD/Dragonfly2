@@ -29,10 +29,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/source"
-	"d7y.io/dragonfly/v2/pkg/source/mocks"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source/mocks"
 )
 
 func Test_downloadFromSource(t *testing.T) {

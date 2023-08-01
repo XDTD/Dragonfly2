@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 	time "time"
 
-	networktopology "d7y.io/dragonfly/v2/scheduler/networktopology"
+	networktopology "github.com/XDTD/Dragonfly2/scheduler/networktopology"
 	gomock "github.com/golang/mock/gomock"
 )
 

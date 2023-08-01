@@ -24,9 +24,9 @@ import (
 	"go.opentelemetry.io/otel"
 	"gorm.io/gorm"
 
-	internaljob "d7y.io/dragonfly/v2/internal/job"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/models"
+	internaljob "github.com/XDTD/Dragonfly2/internal/job"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/models"
 )
 
 // DefaultTaskPollingInterval is the default interval for polling task.

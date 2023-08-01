@@ -34,12 +34,12 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/cmd/dependency/base"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/cmd/dependency/base"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/pkg/unit"
 )
 
 type DaemonConfig = DaemonOption

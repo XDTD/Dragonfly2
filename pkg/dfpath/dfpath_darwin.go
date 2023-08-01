@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"d7y.io/dragonfly/v2/pkg/os/user"
+	"github.com/XDTD/Dragonfly2/pkg/os/user"
 )
 
 var DefaultWorkHome = filepath.Join(user.HomeDir(), ".dragonfly")

@@ -22,10 +22,10 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/client/config"
-	configmocks "d7y.io/dragonfly/v2/client/config/mocks"
-	managerclientmocks "d7y.io/dragonfly/v2/pkg/rpc/manager/client/mocks"
-	schedulerclientmocks "d7y.io/dragonfly/v2/pkg/rpc/scheduler/client/mocks"
+	"github.com/XDTD/Dragonfly2/client/config"
+	configmocks "github.com/XDTD/Dragonfly2/client/config/mocks"
+	managerclientmocks "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client/mocks"
+	schedulerclientmocks "github.com/XDTD/Dragonfly2/pkg/rpc/scheduler/client/mocks"
 )
 
 func TestAnnouncer_New(t *testing.T) {

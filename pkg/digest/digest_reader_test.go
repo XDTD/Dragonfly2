@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 func TestDigest_Reader(t *testing.T) {

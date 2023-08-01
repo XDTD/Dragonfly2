@@ -37,15 +37,15 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/peer"
-	"d7y.io/dragonfly/v2/client/daemon/storage"
-	"d7y.io/dragonfly/v2/client/daemon/storage/mocks"
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	"d7y.io/dragonfly/v2/pkg/rpc/cdnsystem/client"
-	"d7y.io/dragonfly/v2/pkg/rpc/common"
-	dfdaemonserver "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/server"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/peer"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage/mocks"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/cdnsystem/client"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/common"
+	dfdaemonserver "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/server"
 )
 
 func Test_ObtainSeeds(t *testing.T) {

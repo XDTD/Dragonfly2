@@ -8,8 +8,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	set "d7y.io/dragonfly/v2/pkg/container/set"
-	resource "d7y.io/dragonfly/v2/scheduler/resource"
+	set "github.com/XDTD/Dragonfly2/pkg/container/set"
+	resource "github.com/XDTD/Dragonfly2/scheduler/resource"
 	gomock "github.com/golang/mock/gomock"
 )
 

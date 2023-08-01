@@ -23,8 +23,8 @@ import (
 	"sync"
 	"time"
 
-	pkggc "d7y.io/dragonfly/v2/pkg/gc"
-	"d7y.io/dragonfly/v2/scheduler/config"
+	pkggc "github.com/XDTD/Dragonfly2/pkg/gc"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 const (

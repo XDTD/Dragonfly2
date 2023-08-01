@@ -19,7 +19,7 @@ package dag
 import (
 	"sync"
 
-	"d7y.io/dragonfly/v2/pkg/container/set"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
 )
 
 // Vertex is a vertex of the directed acyclic graph.

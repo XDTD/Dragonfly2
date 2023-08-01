@@ -17,7 +17,7 @@
 package types
 
 import (
-	"d7y.io/dragonfly/v2/manager/permission/rbac"
+	"github.com/XDTD/Dragonfly2/manager/permission/rbac"
 )
 
 type CreateRoleRequest struct {

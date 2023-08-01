@@ -38,9 +38,9 @@ import (
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 	v2mocks "d7y.io/api/v2/pkg/apis/scheduler/v2/mocks"
 
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
-	configmocks "d7y.io/dragonfly/v2/scheduler/config/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
+	configmocks "github.com/XDTD/Dragonfly2/scheduler/config/mocks"
 )
 
 var (

@@ -31,19 +31,19 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/dfget"
-	"d7y.io/dragonfly/v2/cmd/dependency"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	"d7y.io/dragonfly/v2/pkg/dfpath"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	"d7y.io/dragonfly/v2/pkg/os/user"
-	"d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/client"
-	"d7y.io/dragonfly/v2/pkg/source"
-	_ "d7y.io/dragonfly/v2/pkg/source/loader" // register all source clients
-	"d7y.io/dragonfly/v2/pkg/unit"
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/dfget"
+	"github.com/XDTD/Dragonfly2/cmd/dependency"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/dfpath"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/os/user"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/client"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	_ "github.com/XDTD/Dragonfly2/pkg/source/loader" // register all source clients
+	"github.com/XDTD/Dragonfly2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 var (

@@ -17,8 +17,8 @@
 package main
 
 import (
-	_ "d7y.io/dragonfly/v2/api/manager"
-	"d7y.io/dragonfly/v2/cmd/manager/cmd"
+	_ "github.com/XDTD/Dragonfly2/api/manager"
+	"github.com/XDTD/Dragonfly2/cmd/manager/cmd"
 )
 
 // @title Dragonfly Manager

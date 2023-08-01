@@ -29,12 +29,12 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/database"
-	"d7y.io/dragonfly/v2/manager/handlers"
-	"d7y.io/dragonfly/v2/manager/middlewares"
-	"d7y.io/dragonfly/v2/manager/service"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/database"
+	"github.com/XDTD/Dragonfly2/manager/handlers"
+	"github.com/XDTD/Dragonfly2/manager/middlewares"
+	"github.com/XDTD/Dragonfly2/manager/service"
 )
 
 const (

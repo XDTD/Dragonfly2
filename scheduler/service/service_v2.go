@@ -30,17 +30,17 @@ import (
 	commonv2 "d7y.io/api/v2/pkg/apis/common/v2"
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/metrics"
-	"d7y.io/dragonfly/v2/scheduler/networktopology"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling"
-	"d7y.io/dragonfly/v2/scheduler/storage"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/metrics"
+	"github.com/XDTD/Dragonfly2/scheduler/networktopology"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling"
+	"github.com/XDTD/Dragonfly2/scheduler/storage"
 )
 
 // V2 is the interface for v2 version of the service.

@@ -10,7 +10,7 @@ import (
 
 	cdnsystem "d7y.io/api/v2/pkg/apis/cdnsystem/v1"
 	common "d7y.io/api/v2/pkg/apis/common/v1"
-	config "d7y.io/dragonfly/v2/scheduler/config"
+	config "github.com/XDTD/Dragonfly2/scheduler/config"
 	gomock "github.com/golang/mock/gomock"
 	grpc "google.golang.org/grpc"
 )

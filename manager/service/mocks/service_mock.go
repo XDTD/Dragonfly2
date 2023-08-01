@@ -8,10 +8,10 @@ import (
 	context "context"
 	reflect "reflect"
 
-	models "d7y.io/dragonfly/v2/manager/models"
-	rbac "d7y.io/dragonfly/v2/manager/permission/rbac"
-	types "d7y.io/dragonfly/v2/manager/types"
-	objectstorage "d7y.io/dragonfly/v2/pkg/objectstorage"
+	models "github.com/XDTD/Dragonfly2/manager/models"
+	rbac "github.com/XDTD/Dragonfly2/manager/permission/rbac"
+	types "github.com/XDTD/Dragonfly2/manager/types"
+	objectstorage "github.com/XDTD/Dragonfly2/pkg/objectstorage"
 	gin "github.com/gin-gonic/gin"
 	gomock "github.com/golang/mock/gomock"
 )

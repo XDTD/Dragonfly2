@@ -8,9 +8,9 @@ import (
 	context "context"
 	reflect "reflect"
 
-	job "d7y.io/dragonfly/v2/internal/job"
-	models "d7y.io/dragonfly/v2/manager/models"
-	types "d7y.io/dragonfly/v2/manager/types"
+	job "github.com/XDTD/Dragonfly2/internal/job"
+	models "github.com/XDTD/Dragonfly2/manager/models"
+	types "github.com/XDTD/Dragonfly2/manager/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

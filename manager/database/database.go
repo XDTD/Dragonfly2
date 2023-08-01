@@ -23,12 +23,12 @@ import (
 	"github.com/go-redis/redis/v8"
 	"gorm.io/gorm"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
-	schedulerconfig "d7y.io/dragonfly/v2/scheduler/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
+	schedulerconfig "github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 const (

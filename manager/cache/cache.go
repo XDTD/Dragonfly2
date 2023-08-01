@@ -22,8 +22,8 @@ import (
 	"github.com/go-redis/cache/v8"
 	"github.com/go-redis/redis/v8"
 
-	"d7y.io/dragonfly/v2/manager/config"
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
 )
 
 // Cache is cache client.

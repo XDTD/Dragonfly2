@@ -20,7 +20,7 @@ import (
 	"net"
 	"time"
 
-	"d7y.io/dragonfly/v2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
 )
 
 const (

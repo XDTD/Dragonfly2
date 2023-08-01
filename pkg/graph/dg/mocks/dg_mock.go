@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	dg "d7y.io/dragonfly/v2/pkg/graph/dg"
+	dg "github.com/XDTD/Dragonfly2/pkg/graph/dg"
 	gomock "github.com/golang/mock/gomock"
 )
 

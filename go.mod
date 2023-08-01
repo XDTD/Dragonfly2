@@ -167,7 +167,6 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
-	github.com/mattn/go-sqlite3 v1.14.15 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mdlayher/socket v0.4.1 // indirect
 	github.com/microsoft/go-mssqldb v0.17.0 // indirect
@@ -232,6 +231,5 @@ require (
 	k8s.io/klog/v2 v2.100.1 // indirect
 	logur.dev/logur v0.16.1 // indirect
 )
-
 
 replace d7y.io/dragonfly/v2 v2.0.9 => github.com/XDTD/Dragonfly2 v1.0.2

@@ -35,8 +35,8 @@ import (
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 	schedulerv2 "d7y.io/api/v2/pkg/apis/scheduler/v2"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/rpc"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
 )
 
 const (

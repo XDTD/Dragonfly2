@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"io"
 
-	"d7y.io/dragonfly/v2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 var data = "hello world"

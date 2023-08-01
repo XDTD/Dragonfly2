@@ -36,12 +36,12 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	dfdaemonv1 "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	dfdaemonclient "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/client"
-	"d7y.io/dragonfly/v2/pkg/source"
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
+	"github.com/XDTD/Dragonfly2/client/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	dfdaemonclient "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/client"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 func Download(cfg *config.DfgetConfig, client dfdaemonclient.V1) error {

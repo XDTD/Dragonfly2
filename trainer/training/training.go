@@ -21,10 +21,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/trainer/storage"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/trainer/storage"
 )
 
 //go:generate mockgen -destination mocks/training_mock.go -source training.go -package mocks

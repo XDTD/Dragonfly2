@@ -30,12 +30,12 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	internaljob "d7y.io/dragonfly/v2/internal/job"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/pkg/structure"
-	"d7y.io/dragonfly/v2/test/e2e/e2eutil"
+	internaljob "github.com/XDTD/Dragonfly2/internal/job"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/pkg/structure"
+	"github.com/XDTD/Dragonfly2/test/e2e/e2eutil"
 )
 
 var _ = Describe("Preheat with manager", func() {

@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	models "d7y.io/dragonfly/v2/manager/models"
+	models "github.com/XDTD/Dragonfly2/manager/models"
 	gomock "github.com/golang/mock/gomock"
 	zap "go.uber.org/zap"
 )

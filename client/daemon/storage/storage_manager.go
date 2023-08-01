@@ -42,11 +42,11 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/gc"
-	"d7y.io/dragonfly/v2/client/util"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/gc"
+	"github.com/XDTD/Dragonfly2/client/util"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
 )
 
 type TaskStorageDriver interface {

@@ -33,12 +33,12 @@ import (
 	managerv1 "d7y.io/api/v2/pkg/apis/manager/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
-	schedulerclient "d7y.io/dragonfly/v2/pkg/rpc/scheduler/client"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/client/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
+	schedulerclient "github.com/XDTD/Dragonfly2/pkg/rpc/scheduler/client"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 // Announcer is the interface used for announce service.

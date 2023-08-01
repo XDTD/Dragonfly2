@@ -10,8 +10,8 @@ import (
 	http "net/http"
 	reflect "reflect"
 
-	dfstore "d7y.io/dragonfly/v2/client/dfstore"
-	objectstorage "d7y.io/dragonfly/v2/pkg/objectstorage"
+	dfstore "github.com/XDTD/Dragonfly2/client/dfstore"
+	objectstorage "github.com/XDTD/Dragonfly2/pkg/objectstorage"
 	gomock "github.com/golang/mock/gomock"
 )
 

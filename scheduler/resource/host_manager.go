@@ -21,10 +21,10 @@ package resource
 import (
 	"sync"
 
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	pkggc "d7y.io/dragonfly/v2/pkg/gc"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	pkggc "github.com/XDTD/Dragonfly2/pkg/gc"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 const (

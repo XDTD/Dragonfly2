@@ -24,13 +24,13 @@ import (
 	"google.golang.org/grpc"
 	"gorm.io/gorm"
 
-	"d7y.io/dragonfly/v2/manager/cache"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/database"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/searcher"
-	"d7y.io/dragonfly/v2/pkg/objectstorage"
-	managerserver "d7y.io/dragonfly/v2/pkg/rpc/manager/server"
+	"github.com/XDTD/Dragonfly2/manager/cache"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/database"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/searcher"
+	"github.com/XDTD/Dragonfly2/pkg/objectstorage"
+	managerserver "github.com/XDTD/Dragonfly2/pkg/rpc/manager/server"
 )
 
 // SelfSignedCert is self signed certificate.

@@ -26,12 +26,12 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/metrics"
-	"d7y.io/dragonfly/v2/client/daemon/storage"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/metrics"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
 )
 
 type FileTaskRequest struct {

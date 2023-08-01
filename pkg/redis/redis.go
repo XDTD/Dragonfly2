@@ -23,7 +23,7 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	"d7y.io/dragonfly/v2/pkg/types"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 const (
