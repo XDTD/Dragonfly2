@@ -27,9 +27,9 @@ import (
 
 	managerv2 "d7y.io/api/v2/pkg/apis/manager/v2"
 
-	"d7y.io/dragonfly/v2/pkg/gc"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	configmocks "d7y.io/dragonfly/v2/scheduler/config/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/gc"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	configmocks "github.com/XDTD/Dragonfly2/scheduler/config/mocks"
 )
 
 func TestResource_New(t *testing.T) {

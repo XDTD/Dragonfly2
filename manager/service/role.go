@@ -19,7 +19,7 @@ package service
 import (
 	"context"
 
-	"d7y.io/dragonfly/v2/manager/types"
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 func (s *service) CreateRole(ctx context.Context, json types.CreateRoleRequest) error {

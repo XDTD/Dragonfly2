@@ -30,11 +30,11 @@ import (
 	testifyassert "github.com/stretchr/testify/assert"
 	"golang.org/x/time/rate"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/storage"
-	"d7y.io/dragonfly/v2/client/daemon/storage/mocks"
-	"d7y.io/dragonfly/v2/client/daemon/test"
-	_ "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/server"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage"
+	"github.com/XDTD/Dragonfly2/client/daemon/storage/mocks"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
+	_ "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/server"
 )
 
 func TestUploadManager_Serve(t *testing.T) {

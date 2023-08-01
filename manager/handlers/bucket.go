@@ -22,11 +22,11 @@ import (
 	"github.com/gin-gonic/gin"
 
 	// nolint
-	_ "d7y.io/dragonfly/v2/manager/models"
+	_ "github.com/XDTD/Dragonfly2/manager/models"
 	// nolint
-	"d7y.io/dragonfly/v2/manager/types"
+	"github.com/XDTD/Dragonfly2/manager/types"
 	// nolint
-	_ "d7y.io/dragonfly/v2/pkg/objectstorage"
+	_ "github.com/XDTD/Dragonfly2/pkg/objectstorage"
 )
 
 // @Summary Create Bucket

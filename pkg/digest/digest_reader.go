@@ -29,7 +29,7 @@ import (
 	"hash"
 	"io"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 // Reader is the interface used for reading resource.

@@ -11,8 +11,8 @@ import (
 
 	v1 "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
 	v10 "d7y.io/api/v2/pkg/apis/scheduler/v1"
-	storage "d7y.io/dragonfly/v2/client/daemon/storage"
-	http "d7y.io/dragonfly/v2/pkg/net/http"
+	storage "github.com/XDTD/Dragonfly2/client/daemon/storage"
+	http "github.com/XDTD/Dragonfly2/pkg/net/http"
 	gomock "github.com/golang/mock/gomock"
 )
 

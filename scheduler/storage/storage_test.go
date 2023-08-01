@@ -30,8 +30,8 @@ import (
 	"github.com/gocarina/gocsv"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
 )
 
 var (

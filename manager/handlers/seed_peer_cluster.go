@@ -22,8 +22,8 @@ import (
 	"github.com/gin-gonic/gin"
 
 	// nolint
-	_ "d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
+	_ "github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 // @Summary Create SeedPeerCluster

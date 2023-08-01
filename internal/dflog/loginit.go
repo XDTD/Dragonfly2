@@ -24,7 +24,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"d7y.io/dragonfly/v2/pkg/types"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 type logInitMeta struct {

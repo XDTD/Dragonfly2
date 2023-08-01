@@ -28,12 +28,12 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/storage"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/storage"
 )
 
 const (

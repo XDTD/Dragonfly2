@@ -23,8 +23,8 @@ import (
 	"go.uber.org/atomic"
 	"golang.org/x/time/rate"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/math"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/math"
 )
 
 const (

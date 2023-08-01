@@ -16,7 +16,7 @@
 
 package main
 
-import "d7y.io/dragonfly/v2/cmd/dfstore/cmd"
+import "github.com/XDTD/Dragonfly2/cmd/dfstore/cmd"
 
 func main() {
 	cmd.Execute()

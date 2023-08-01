@@ -21,7 +21,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"d7y.io/dragonfly/v2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/models"
 )
 
 type searcher struct{}

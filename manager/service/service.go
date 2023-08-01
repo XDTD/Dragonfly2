@@ -26,14 +26,14 @@ import (
 	"github.com/go-redis/redis/v8"
 	"gorm.io/gorm"
 
-	"d7y.io/dragonfly/v2/manager/cache"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/database"
-	"d7y.io/dragonfly/v2/manager/job"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/permission/rbac"
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/objectstorage"
+	"github.com/XDTD/Dragonfly2/manager/cache"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/database"
+	"github.com/XDTD/Dragonfly2/manager/job"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/permission/rbac"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/objectstorage"
 )
 
 type Service interface {

@@ -24,7 +24,7 @@ import (
 	"github.com/go-http-utils/headers"
 	"gorm.io/gorm"
 
-	"d7y.io/dragonfly/v2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/models"
 )
 
 func PersonalAccessToken(gdb *gorm.DB) gin.HandlerFunc {

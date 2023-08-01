@@ -21,7 +21,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 var VersionCmd = &cobra.Command{

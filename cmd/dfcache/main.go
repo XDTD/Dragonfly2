@@ -17,7 +17,7 @@
 package main
 
 import (
-	"d7y.io/dragonfly/v2/cmd/dfcache/cmd"
+	"github.com/XDTD/Dragonfly2/cmd/dfcache/cmd"
 )
 
 func main() {

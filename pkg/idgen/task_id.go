@@ -22,9 +22,9 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	pkgdigest "d7y.io/dragonfly/v2/pkg/digest"
-	neturl "d7y.io/dragonfly/v2/pkg/net/url"
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
+	pkgdigest "github.com/XDTD/Dragonfly2/pkg/digest"
+	neturl "github.com/XDTD/Dragonfly2/pkg/net/url"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 const (

@@ -19,12 +19,12 @@ package rpcserver
 import (
 	"google.golang.org/grpc"
 
-	"d7y.io/dragonfly/v2/pkg/rpc/scheduler/server"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/networktopology"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling"
-	"d7y.io/dragonfly/v2/scheduler/storage"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/scheduler/server"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/networktopology"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling"
+	"github.com/XDTD/Dragonfly2/scheduler/storage"
 )
 
 // New returns a new scheduler server from the given options.

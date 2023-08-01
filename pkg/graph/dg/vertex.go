@@ -16,7 +16,7 @@
 
 package dg
 
-import "d7y.io/dragonfly/v2/pkg/container/set"
+import "github.com/XDTD/Dragonfly2/pkg/container/set"
 
 // Vertex is a vertex of the directed graph.
 type Vertex[T comparable] struct {

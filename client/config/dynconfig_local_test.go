@@ -26,7 +26,7 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/resolver"
 
-	"d7y.io/dragonfly/v2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
 )
 
 func TestDynconfigLocal_GetResolveSchedulerAddrs(t *testing.T) {

@@ -25,8 +25,8 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"go.uber.org/atomic"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/cache"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/cache"
 )
 
 type SourceType string

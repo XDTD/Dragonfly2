@@ -23,8 +23,8 @@ import (
 	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/permission/rbac"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/permission/rbac"
 )
 
 func RBAC(e *casbin.Enforcer) gin.HandlerFunc {

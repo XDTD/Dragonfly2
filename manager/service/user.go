@@ -25,10 +25,10 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"golang.org/x/crypto/bcrypt"
 
-	manageroauth "d7y.io/dragonfly/v2/manager/auth/oauth"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/permission/rbac"
-	"d7y.io/dragonfly/v2/manager/types"
+	manageroauth "github.com/XDTD/Dragonfly2/manager/auth/oauth"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/permission/rbac"
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 func (s *service) UpdateUser(ctx context.Context, id uint, json types.UpdateUserRequest) (*models.User, error) {

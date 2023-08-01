@@ -25,9 +25,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 
-	"d7y.io/dragonfly/v2/pkg/objectstorage"
-	"d7y.io/dragonfly/v2/pkg/rpc"
-	"d7y.io/dragonfly/v2/pkg/types"
+	"github.com/XDTD/Dragonfly2/pkg/objectstorage"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 var (

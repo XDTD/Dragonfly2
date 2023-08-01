@@ -22,9 +22,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 
-	"d7y.io/dragonfly/v2/internal/job"
-	_ "d7y.io/dragonfly/v2/manager/models" // nolint
-	"d7y.io/dragonfly/v2/manager/types"
+	"github.com/XDTD/Dragonfly2/internal/job"
+	_ "github.com/XDTD/Dragonfly2/manager/models" // nolint
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 // @Summary Create Job

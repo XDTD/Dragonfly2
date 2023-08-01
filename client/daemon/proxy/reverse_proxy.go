@@ -22,8 +22,8 @@ import (
 	"net/url"
 	"strings"
 
-	"d7y.io/dragonfly/v2/client/config"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/client/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 func newReverseProxy(mirror *config.RegistryMirror) *httputil.ReverseProxy {

@@ -31,8 +31,8 @@ import (
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/go-http-utils/headers"
 
-	"d7y.io/dragonfly/v2/pkg/source"
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
+	"github.com/XDTD/Dragonfly2/pkg/source"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 const OSSClient = "oss"

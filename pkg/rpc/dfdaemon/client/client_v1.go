@@ -34,8 +34,8 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	dfdaemonv1 "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/rpc"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
 )
 
 // GetV1 returns v1 version of the dfdaemon client.

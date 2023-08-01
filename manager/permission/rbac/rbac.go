@@ -29,8 +29,8 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 
-	managermodels "d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/pkg/strings"
+	managermodels "github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/pkg/strings"
 )
 
 // Syntax for models see https://casbin.org/docs/en/syntax-for-models

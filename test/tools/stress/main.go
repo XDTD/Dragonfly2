@@ -36,9 +36,9 @@ import (
 	"github.com/go-echarts/statsview/viewer"
 	"github.com/montanaflynn/stats"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	"d7y.io/dragonfly/v2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/unit"
 )
 
 var (

@@ -16,7 +16,7 @@
 
 package main
 
-import "d7y.io/dragonfly/v2/scheduler/resource"
+import "github.com/XDTD/Dragonfly2/scheduler/resource"
 
 type evaluator struct{}
 

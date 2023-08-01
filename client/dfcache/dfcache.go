@@ -27,10 +27,10 @@ import (
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 	dfdaemonv1 "d7y.io/api/v2/pkg/apis/dfdaemon/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/internal/dferrors"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	dfdaemonclient "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/client"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	dfdaemonclient "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/client"
 )
 
 // Format that's used to cast the given cid to URI.

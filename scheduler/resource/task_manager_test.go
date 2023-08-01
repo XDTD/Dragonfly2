@@ -27,8 +27,8 @@ import (
 
 	commonv2 "d7y.io/api/v2/pkg/apis/common/v2"
 
-	"d7y.io/dragonfly/v2/pkg/gc"
-	"d7y.io/dragonfly/v2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/pkg/gc"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 var (
