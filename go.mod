@@ -1,4 +1,4 @@
-module d7y.io/dragonfly/v2
+module github.com/XDTD/Dragonfly2
 
 go 1.20
 
@@ -232,3 +232,6 @@ require (
 	k8s.io/klog/v2 v2.90.1 // indirect
 	logur.dev/logur v0.16.1 // indirect
 )
+
+
+replace d7y.io/dragonfly/v2 v2.0.9 => github.com/XDTD/Dragonfly2 v1.0.2
