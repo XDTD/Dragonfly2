@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	_ "d7y.io/dragonfly/v2/manager/models" // nolint
-	"d7y.io/dragonfly/v2/manager/types"
+	_ "github.com/XDTD/Dragonfly2/manager/models" // nolint
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 // @Summary Destroy Model

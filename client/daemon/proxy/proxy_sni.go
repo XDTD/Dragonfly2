@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 func (proxy *Proxy) ServeSNI(l net.Listener) error {

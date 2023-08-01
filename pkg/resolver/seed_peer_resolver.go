@@ -23,7 +23,7 @@ import (
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/resolver"
 
-	"d7y.io/dragonfly/v2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 const (

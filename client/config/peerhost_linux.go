@@ -23,10 +23,10 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/pkg/net/fqdn"
-	"d7y.io/dragonfly/v2/pkg/rpc"
-	"d7y.io/dragonfly/v2/pkg/types"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/pkg/net/fqdn"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
+	"github.com/XDTD/Dragonfly2/pkg/types"
 )
 
 var peerHostConfig = func() *DaemonOption {

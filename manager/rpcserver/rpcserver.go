@@ -27,15 +27,15 @@ import (
 
 	managerv1 "d7y.io/api/v2/pkg/apis/manager/v1"
 
-	"d7y.io/dragonfly/v2/manager/cache"
-	"d7y.io/dragonfly/v2/manager/config"
-	"d7y.io/dragonfly/v2/manager/database"
-	"d7y.io/dragonfly/v2/manager/metrics"
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/searcher"
-	pkgcache "d7y.io/dragonfly/v2/pkg/cache"
-	"d7y.io/dragonfly/v2/pkg/objectstorage"
-	managerserver "d7y.io/dragonfly/v2/pkg/rpc/manager/server"
+	"github.com/XDTD/Dragonfly2/manager/cache"
+	"github.com/XDTD/Dragonfly2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/database"
+	"github.com/XDTD/Dragonfly2/manager/metrics"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/searcher"
+	pkgcache "github.com/XDTD/Dragonfly2/pkg/cache"
+	"github.com/XDTD/Dragonfly2/pkg/objectstorage"
+	managerserver "github.com/XDTD/Dragonfly2/pkg/rpc/manager/server"
 )
 
 const (

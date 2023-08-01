@@ -17,5 +17,5 @@
 package loader
 
 import (
-	_ "d7y.io/dragonfly/v2/pkg/source/clients/s3protocol" // Register s3 client
+	_ "github.com/XDTD/Dragonfly2/pkg/source/clients/s3protocol" // Register s3 client
 )

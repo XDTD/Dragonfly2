@@ -28,11 +28,11 @@ import (
 	managerv2 "d7y.io/api/v2/pkg/apis/manager/v2"
 	trainerv1 "d7y.io/api/v2/pkg/apis/trainer/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
-	trainerclient "d7y.io/dragonfly/v2/pkg/rpc/trainer/client"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	"d7y.io/dragonfly/v2/scheduler/storage"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
+	trainerclient "github.com/XDTD/Dragonfly2/pkg/rpc/trainer/client"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/scheduler/storage"
 )
 
 const (

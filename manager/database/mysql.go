@@ -28,8 +28,8 @@ import (
 	"gorm.io/gorm/schema"
 	"moul.io/zapgorm2"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/manager/config"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/manager/config"
 )
 
 const (

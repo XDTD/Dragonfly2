@@ -20,8 +20,8 @@ import (
 	"net"
 	"time"
 
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	"d7y.io/dragonfly/v2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/unit"
 )
 
 // Reason of backing to source.

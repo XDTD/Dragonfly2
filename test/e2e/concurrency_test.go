@@ -22,7 +22,7 @@ import (
 	. "github.com/onsi/ginkgo/v2" //nolint
 	. "github.com/onsi/gomega"    //nolint
 
-	"d7y.io/dragonfly/v2/test/e2e/e2eutil"
+	"github.com/XDTD/Dragonfly2/test/e2e/e2eutil"
 )
 
 var _ = Describe("Download concurrency", func() {

@@ -22,7 +22,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"d7y.io/dragonfly/v2/manager/config"
+	"github.com/XDTD/Dragonfly2/manager/config"
 )
 
 func TestNew(t *testing.T) {

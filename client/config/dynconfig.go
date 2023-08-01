@@ -27,7 +27,7 @@ import (
 
 	managerv1 "d7y.io/api/v2/pkg/apis/manager/v1"
 
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
 )
 
 type SourceType string

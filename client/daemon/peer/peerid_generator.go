@@ -16,7 +16,7 @@
 
 package peer
 
-import "d7y.io/dragonfly/v2/pkg/idgen"
+import "github.com/XDTD/Dragonfly2/pkg/idgen"
 
 const (
 	defaultPeerIDBufferSize = 1024

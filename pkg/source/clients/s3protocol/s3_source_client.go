@@ -29,7 +29,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/go-http-utils/headers"
 
-	"d7y.io/dragonfly/v2/pkg/source"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 const S3Scheme = "s3"

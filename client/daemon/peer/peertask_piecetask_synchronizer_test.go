@@ -28,7 +28,7 @@ import (
 	schedulerv1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
 	"d7y.io/api/v2/pkg/apis/scheduler/v1/mocks"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
 )
 
 func Test_watchdog(t *testing.T) {

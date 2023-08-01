@@ -19,11 +19,11 @@ package rpcserver
 import (
 	trainerv1 "d7y.io/api/v2/pkg/apis/trainer/v1"
 
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/trainer/metrics"
-	"d7y.io/dragonfly/v2/trainer/service"
-	storage "d7y.io/dragonfly/v2/trainer/storage"
-	"d7y.io/dragonfly/v2/trainer/training"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/trainer/metrics"
+	"github.com/XDTD/Dragonfly2/trainer/service"
+	storage "github.com/XDTD/Dragonfly2/trainer/storage"
+	"github.com/XDTD/Dragonfly2/trainer/training"
 )
 
 // trainerServerV1 is v1 version of the trainer grpc server.

@@ -8,7 +8,7 @@ import (
 	net "net"
 	reflect "reflect"
 
-	config "d7y.io/dragonfly/v2/client/config"
+	config "github.com/XDTD/Dragonfly2/client/config"
 	gomock "github.com/golang/mock/gomock"
 )
 

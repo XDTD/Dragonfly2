@@ -29,8 +29,8 @@ import (
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/suite"
 
-	nethttp "d7y.io/dragonfly/v2/pkg/net/http"
-	"d7y.io/dragonfly/v2/pkg/source"
+	nethttp "github.com/XDTD/Dragonfly2/pkg/net/http"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 func TestHTTPSourceClientTestSuite(t *testing.T) {

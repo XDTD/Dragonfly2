@@ -23,8 +23,8 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"d7y.io/dragonfly/v2/pkg/gc"
-	"d7y.io/dragonfly/v2/scheduler/config"
+	"github.com/XDTD/Dragonfly2/pkg/gc"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
 )
 
 // Resource is the interface used for resource.

@@ -9,8 +9,8 @@ import (
 	reflect "reflect"
 
 	v1 "d7y.io/api/v2/pkg/apis/scheduler/v1"
-	http "d7y.io/dragonfly/v2/pkg/net/http"
-	types "d7y.io/dragonfly/v2/pkg/types"
+	http "github.com/XDTD/Dragonfly2/pkg/net/http"
+	types "github.com/XDTD/Dragonfly2/pkg/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

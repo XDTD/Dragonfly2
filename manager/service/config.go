@@ -19,8 +19,8 @@ package service
 import (
 	"context"
 
-	"d7y.io/dragonfly/v2/manager/models"
-	"d7y.io/dragonfly/v2/manager/types"
+	"github.com/XDTD/Dragonfly2/manager/models"
+	"github.com/XDTD/Dragonfly2/manager/types"
 )
 
 func (s *service) CreateConfig(ctx context.Context, json types.CreateConfigRequest) (*models.Config, error) {

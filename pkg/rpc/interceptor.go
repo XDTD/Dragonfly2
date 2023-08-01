@@ -24,7 +24,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"d7y.io/dragonfly/v2/internal/dferrors"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
 )
 
 // Refresher is the interface for refreshing dynconfig.

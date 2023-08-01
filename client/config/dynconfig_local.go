@@ -31,8 +31,8 @@ import (
 
 	managerv1 "d7y.io/api/v2/pkg/apis/manager/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	healthclient "d7y.io/dragonfly/v2/pkg/rpc/health/client"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	healthclient "github.com/XDTD/Dragonfly2/pkg/rpc/health/client"
 )
 
 var (

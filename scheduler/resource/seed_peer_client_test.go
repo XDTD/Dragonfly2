@@ -29,10 +29,10 @@ import (
 
 	managerv2 "d7y.io/api/v2/pkg/apis/manager/v2"
 
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	pkgtypes "d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/scheduler/config"
-	configmocks "d7y.io/dragonfly/v2/scheduler/config/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	pkgtypes "github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/scheduler/config"
+	configmocks "github.com/XDTD/Dragonfly2/scheduler/config/mocks"
 )
 
 func TestSeedPeerClient_newSeedPeerClient(t *testing.T) {

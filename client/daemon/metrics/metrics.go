@@ -23,8 +23,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 const (

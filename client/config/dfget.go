@@ -28,14 +28,14 @@ import (
 	"syscall"
 	"time"
 
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/cmd/dependency/base"
-	"d7y.io/dragonfly/v2/internal/dferrors"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/net/url"
-	"d7y.io/dragonfly/v2/pkg/os/user"
-	pkgstrings "d7y.io/dragonfly/v2/pkg/strings"
-	"d7y.io/dragonfly/v2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/cmd/dependency/base"
+	"github.com/XDTD/Dragonfly2/internal/dferrors"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/net/url"
+	"github.com/XDTD/Dragonfly2/pkg/os/user"
+	pkgstrings "github.com/XDTD/Dragonfly2/pkg/strings"
+	"github.com/XDTD/Dragonfly2/pkg/unit"
 )
 
 type DfgetConfig = ClientOption

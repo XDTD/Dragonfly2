@@ -23,9 +23,9 @@ import (
 	"os"
 	"syscall"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfnet"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfnet"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
 )
 
 // Listen wraps net.Listen with dfnet.NetAddr

@@ -21,8 +21,8 @@ package config
 import (
 	"golang.org/x/time/rate"
 
-	"d7y.io/dragonfly/v2/client/util"
-	"d7y.io/dragonfly/v2/pkg/unit"
+	"github.com/XDTD/Dragonfly2/client/util"
+	"github.com/XDTD/Dragonfly2/pkg/unit"
 )
 
 var dfgetConfig = ClientOption{

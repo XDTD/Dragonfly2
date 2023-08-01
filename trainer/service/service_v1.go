@@ -27,11 +27,11 @@ import (
 
 	trainerv1 "d7y.io/api/v2/pkg/apis/trainer/v1"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/idgen"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/trainer/storage"
-	"d7y.io/dragonfly/v2/trainer/training"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/idgen"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/trainer/storage"
+	"github.com/XDTD/Dragonfly2/trainer/training"
 )
 
 // V1 is the interface for v1 version of the service.

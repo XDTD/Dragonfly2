@@ -27,16 +27,16 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfpath"
-	"d7y.io/dragonfly/v2/pkg/net/ip"
-	"d7y.io/dragonfly/v2/pkg/rpc"
-	managerclient "d7y.io/dragonfly/v2/pkg/rpc/manager/client"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/trainer/metrics"
-	"d7y.io/dragonfly/v2/trainer/rpcserver"
-	"d7y.io/dragonfly/v2/trainer/storage"
-	"d7y.io/dragonfly/v2/trainer/training"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfpath"
+	"github.com/XDTD/Dragonfly2/pkg/net/ip"
+	"github.com/XDTD/Dragonfly2/pkg/rpc"
+	managerclient "github.com/XDTD/Dragonfly2/pkg/rpc/manager/client"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/trainer/metrics"
+	"github.com/XDTD/Dragonfly2/trainer/rpcserver"
+	"github.com/XDTD/Dragonfly2/trainer/storage"
+	"github.com/XDTD/Dragonfly2/trainer/training"
 )
 
 const (

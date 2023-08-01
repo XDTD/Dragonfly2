@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"d7y.io/dragonfly/v2/pkg/math"
+	"github.com/XDTD/Dragonfly2/pkg/math"
 )
 
 func Run(ctx context.Context,

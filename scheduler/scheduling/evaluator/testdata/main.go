@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"os"
 
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	"d7y.io/dragonfly/v2/scheduler/scheduling/evaluator"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/scheduling/evaluator"
 )
 
 func main() {

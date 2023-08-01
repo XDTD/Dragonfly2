@@ -28,10 +28,10 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/pkg/container/set"
-	pkgredis "d7y.io/dragonfly/v2/pkg/redis"
-	"d7y.io/dragonfly/v2/scheduler/resource"
-	storagemocks "d7y.io/dragonfly/v2/scheduler/storage/mocks"
+	"github.com/XDTD/Dragonfly2/pkg/container/set"
+	pkgredis "github.com/XDTD/Dragonfly2/pkg/redis"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
+	storagemocks "github.com/XDTD/Dragonfly2/scheduler/storage/mocks"
 )
 
 func Test_NewNetworkTopology(t *testing.T) {

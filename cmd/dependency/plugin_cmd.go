@@ -23,9 +23,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"d7y.io/dragonfly/v2/internal/dfplugin"
-	"d7y.io/dragonfly/v2/pkg/dfpath"
-	"d7y.io/dragonfly/v2/pkg/source"
+	"github.com/XDTD/Dragonfly2/internal/dfplugin"
+	"github.com/XDTD/Dragonfly2/pkg/dfpath"
+	"github.com/XDTD/Dragonfly2/pkg/source"
 )
 
 var PluginCmd = &cobra.Command{

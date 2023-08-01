@@ -20,8 +20,8 @@ import (
 	"context"
 	"errors"
 
-	"d7y.io/dragonfly/v2/manager/types"
-	"d7y.io/dragonfly/v2/pkg/objectstorage"
+	"github.com/XDTD/Dragonfly2/manager/types"
+	"github.com/XDTD/Dragonfly2/pkg/objectstorage"
 )
 
 var ErrObjectStorageDisabled = errors.New("object storage is disabled")

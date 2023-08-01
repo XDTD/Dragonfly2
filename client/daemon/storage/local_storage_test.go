@@ -34,14 +34,14 @@ import (
 
 	commonv1 "d7y.io/api/v2/pkg/apis/common/v1"
 
-	"d7y.io/dragonfly/v2/client/config"
-	"d7y.io/dragonfly/v2/client/daemon/test"
-	clientutil "d7y.io/dragonfly/v2/client/util"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/internal/util"
-	"d7y.io/dragonfly/v2/pkg/digest"
-	"d7y.io/dragonfly/v2/pkg/net/http"
-	_ "d7y.io/dragonfly/v2/pkg/rpc/dfdaemon/server"
+	"github.com/XDTD/Dragonfly2/client/config"
+	"github.com/XDTD/Dragonfly2/client/daemon/test"
+	clientutil "github.com/XDTD/Dragonfly2/client/util"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/internal/util"
+	"github.com/XDTD/Dragonfly2/pkg/digest"
+	"github.com/XDTD/Dragonfly2/pkg/net/http"
+	_ "github.com/XDTD/Dragonfly2/pkg/rpc/dfdaemon/server"
 )
 
 func TestLocalTaskStore_PutAndGetPiece(t *testing.T) {

@@ -24,13 +24,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"d7y.io/dragonfly/v2/cmd/dependency"
-	logger "d7y.io/dragonfly/v2/internal/dflog"
-	"d7y.io/dragonfly/v2/pkg/dfpath"
-	"d7y.io/dragonfly/v2/pkg/types"
-	"d7y.io/dragonfly/v2/trainer"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/version"
+	"github.com/XDTD/Dragonfly2/cmd/dependency"
+	logger "github.com/XDTD/Dragonfly2/internal/dflog"
+	"github.com/XDTD/Dragonfly2/pkg/dfpath"
+	"github.com/XDTD/Dragonfly2/pkg/types"
+	"github.com/XDTD/Dragonfly2/trainer"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/version"
 )
 
 var (

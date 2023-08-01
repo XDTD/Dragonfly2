@@ -19,10 +19,10 @@ package rpcserver
 import (
 	"google.golang.org/grpc"
 
-	"d7y.io/dragonfly/v2/pkg/rpc/trainer/server"
-	"d7y.io/dragonfly/v2/trainer/config"
-	"d7y.io/dragonfly/v2/trainer/storage"
-	"d7y.io/dragonfly/v2/trainer/training"
+	"github.com/XDTD/Dragonfly2/pkg/rpc/trainer/server"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	"github.com/XDTD/Dragonfly2/trainer/storage"
+	"github.com/XDTD/Dragonfly2/trainer/training"
 )
 
 // New creates a new grpc server.

@@ -10,7 +10,7 @@ import (
 	reflect "reflect"
 	time "time"
 
-	objectstorage "d7y.io/dragonfly/v2/pkg/objectstorage"
+	objectstorage "github.com/XDTD/Dragonfly2/pkg/objectstorage"
 	gomock "github.com/golang/mock/gomock"
 )
 

@@ -23,9 +23,9 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/trainer/config"
-	storagemocks "d7y.io/dragonfly/v2/trainer/storage/mocks"
-	trainingmocks "d7y.io/dragonfly/v2/trainer/training/mocks"
+	"github.com/XDTD/Dragonfly2/trainer/config"
+	storagemocks "github.com/XDTD/Dragonfly2/trainer/storage/mocks"
+	trainingmocks "github.com/XDTD/Dragonfly2/trainer/training/mocks"
 )
 
 func TestRPCServer_New(t *testing.T) {

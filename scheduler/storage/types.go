@@ -19,7 +19,7 @@ package storage
 import (
 	"time"
 
-	"d7y.io/dragonfly/v2/scheduler/resource"
+	"github.com/XDTD/Dragonfly2/scheduler/resource"
 )
 
 // Task contains content for task.
