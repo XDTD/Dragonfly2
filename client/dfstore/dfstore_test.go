@@ -41,19 +41,19 @@ func TestGetObjectListWithContext(t *testing.T) {
 		t.Error(err)
 	}
 
-	input := &ListObjectMetadatasInput{
+	input := &GetObjectMetadatasInput{
 		BucketName: "test",
 		Prefix:     "",
-		Delimiter:  "",
-		Marker:     "JuiceFS.png",
-		Limit:      2,
+		Delimiter:  "/",
+		Marker:     "",
+		Limit:      20,
 	}
-	objMetas, err := client.ListObjectMetadatasWithContext(context.Background(), input)
+	objMetas, err := client.GetObjectMetadatasWithContext(context.Background(), input)
 	if err != nil {
 		t.Error(err)
 	}
 	for _, objMeta := range objMetas {
-		fmt.Printf("%v", objMeta)
+		fmt.Printf("%v\n", objMeta)
 	}
 
 }
@@ -65,7 +65,7 @@ func TestGetObjectMetadataWithContext(t *testing.T) {
 	}
 
 	input := &GetObjectMetadataInput{
-		BucketName: "test",
+		BucketName: "newbucketdragonflytest",
 		ObjectKey:  "JuiceFS.png",
 	}
 
@@ -84,9 +84,9 @@ func TestCopyObjectWithContext(t *testing.T) {
 	}
 
 	input := &CopyObjectInput{
-		BucketName:    "test",
-		SrcObjectKey:  "JuiceFS.png",
-		DestObjectKey: "dst7.png",
+		BucketName:           "newbucketdragonflytest",
+		SourceObjectKey:      "JuiceFS.png",
+		DestinationObjectKey: "dst6.png",
 	}
 
 	err = client.CopyObjectWithContext(context.Background(), input)
