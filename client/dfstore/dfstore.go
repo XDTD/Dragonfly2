@@ -30,6 +30,7 @@ import (
 	"net/url"
 	"path/filepath"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/go-http-utils/headers"
@@ -155,6 +156,11 @@ func (dfs *dfstore) GetObjectMetadataRequestWithContext(ctx context.Context, inp
 	}
 
 	u.Path = filepath.Join("buckets", input.BucketName, "objects", input.ObjectKey)
+
+	if strings.HasSuffix(input.ObjectKey, "/") {
+		u.Path += "/"
+	}
+
 	req, err := http.NewRequestWithContext(ctx, http.MethodHead, u.String(), nil)
 	if err != nil {
 		return nil, err
@@ -241,7 +247,7 @@ func (dfs *dfstore) GetObjectMetadatasRequestWithContext(ctx context.Context, in
 		return nil, err
 	}
 
-	u.Path = filepath.Join("buckets", input.BucketName, "objects")
+	u.Path = filepath.Join("buckets", input.BucketName, "metadatas")
 
 	query := u.Query()
 	if input.Prefix != "" {
@@ -338,6 +344,10 @@ func (dfs *dfstore) GetObjectRequestWithContext(ctx context.Context, input *GetO
 	}
 
 	u.Path = filepath.Join("buckets", input.BucketName, "objects", input.ObjectKey)
+
+	if strings.HasSuffix(input.ObjectKey, "/") {
+		u.Path += "/"
+	}
 
 	query := u.Query()
 	if input.Filter != "" {
@@ -468,6 +478,10 @@ func (dfs *dfstore) PutObjectRequestWithContext(ctx context.Context, input *PutO
 	}
 
 	u.Path = filepath.Join("buckets", input.BucketName, "objects", input.ObjectKey)
+
+	if strings.HasSuffix(input.ObjectKey, "/") {
+		u.Path += "/"
+	}
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodPut, u.String(), body)
 	if err != nil {
@@ -675,6 +689,11 @@ func (dfs *dfstore) DeleteObjectRequestWithContext(ctx context.Context, input *D
 	}
 
 	u.Path = filepath.Join("buckets", input.BucketName, "objects", input.ObjectKey)
+
+	if strings.HasSuffix(input.ObjectKey, "/") {
+		u.Path += "/"
+	}
+
 	return http.NewRequestWithContext(ctx, http.MethodDelete, u.String(), nil)
 }
 
@@ -733,6 +752,11 @@ func (dfs *dfstore) IsObjectExistRequestWithContext(ctx context.Context, input *
 	}
 
 	u.Path = filepath.Join("buckets", input.BucketName, "objects", input.ObjectKey)
+
+	if strings.HasSuffix(input.ObjectKey, "/") {
+		u.Path += "/"
+	}
+
 	return http.NewRequestWithContext(ctx, http.MethodHead, u.String(), nil)
 }
 
