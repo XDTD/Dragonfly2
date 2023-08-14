@@ -136,7 +136,7 @@ func (o *oss) GetObjectMetadatas(ctx context.Context, bucketName, prefix, marker
 		return nil, err
 	}
 
-	if limit == 0 {
+	if limit == 0 || limit > DefaultGetObjectMetadatasLimit {
 		limit = DefaultGetObjectMetadatasLimit
 	}
 
