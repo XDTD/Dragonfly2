@@ -1,6 +1,7 @@
 package dfstore
 
 import (
+	"bytes"
 	"context"
 	"fmt"
 	"testing"
@@ -90,6 +91,25 @@ func TestCopyObjectWithContext(t *testing.T) {
 	}
 
 	err = client.CopyObjectWithContext(context.Background(), input)
+	if err != nil {
+		t.Error(err)
+	}
+}
+
+func TestPutObjectWithContext(t *testing.T) {
+	client, err := GetDfstoreClient()
+	if err != nil {
+		t.Error(err)
+	}
+
+	key := "测试编码文件" + `{"name":"zhijian"}` + string('\u001F')
+	input := &PutObjectInput{
+		BucketName: "test",
+		ObjectKey:  key,
+		Reader:     bytes.NewReader(nil),
+	}
+
+	err = client.PutObjectWithContext(context.Background(), input)
 	if err != nil {
 		t.Error(err)
 	}

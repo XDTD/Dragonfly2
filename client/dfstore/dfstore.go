@@ -645,7 +645,7 @@ func (dfs *dfstore) CreateBucketRequestWithContext(ctx context.Context, input *C
 		return nil, err
 	}
 
-	u.Path = filepath.Join("buckets", input.BucketName)
+	u.Path = filepath.Join(input.BucketName)
 
 	query := u.Query()
 
