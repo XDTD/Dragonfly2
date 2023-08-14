@@ -387,6 +387,7 @@ func (o *objectStorage) putObject(ctx *gin.Context) {
 		fileHeader  = form.File
 	)
 
+	logger.Infof("put object to %s", objectKey)
 	client, err := o.client()
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})
@@ -565,7 +566,7 @@ func (o *objectStorage) copyObject(ctx *gin.Context) {
 
 	var (
 		bucketName  = params.ID
-		destination = params.ObjectKey
+		destination = strings.TrimPrefix(params.ObjectKey, string(os.PathSeparator))
 		source      = form.SourceObjectKey
 	)
 

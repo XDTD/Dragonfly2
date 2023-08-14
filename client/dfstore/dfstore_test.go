@@ -102,11 +102,10 @@ func TestPutObjectWithContext(t *testing.T) {
 		t.Error(err)
 	}
 
-	key := "测试编码文件" + `{"name":"zhijian"}` + string('\u001F')
 	input := &PutObjectInput{
-		BucketName: "test",
-		ObjectKey:  key,
-		Reader:     bytes.NewReader(nil),
+		BucketName: "newbucketdragonflytest",
+		ObjectKey:  "putTest",
+		Reader:     bytes.NewReader([]byte{'1'}),
 	}
 
 	err = client.PutObjectWithContext(context.Background(), input)
