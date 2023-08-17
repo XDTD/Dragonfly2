@@ -20,6 +20,7 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"net/url"
 	"path"
 	"time"
 
@@ -150,9 +151,14 @@ func (s *s3) GetObjectMetadatas(ctx context.Context, bucketName, prefix, marker,
 	}
 
 	commonPrefixes := make([]string, len(resp.CommonPrefixes))
-	for i, prefix := range resp.CommonPrefixes {
-		commonPrefixes[i] = prefix.GoString()
+	for i, p := range resp.CommonPrefixes {
+		prefix, err := url.QueryUnescape(*p.Prefix)
+		if err != nil {
+			return nil, fmt.Errorf("failed to decode commonPrefixes %s, error: %s", *p.Prefix, err.Error())
+		}
+		commonPrefixes[i] = prefix
 	}
+
 	return &ObjectMetadatas{
 		Metadatas:      metadatas,
 		CommonPrefixes: commonPrefixes,
