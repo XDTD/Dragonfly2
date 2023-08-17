@@ -388,7 +388,6 @@ func (o *objectStorage) putObject(ctx *gin.Context) {
 		fileHeader  = form.File
 	)
 
-	logger.Infof("put object to %s", objectKey)
 	client, err := o.client()
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"errors": err.Error()})

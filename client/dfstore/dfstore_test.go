@@ -53,7 +53,7 @@ func TestGetObjectListWithContext(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	for _, objMeta := range objMetas {
+	for _, objMeta := range objMetas.Metadatas {
 		fmt.Printf("%v\n", objMeta)
 	}
 
