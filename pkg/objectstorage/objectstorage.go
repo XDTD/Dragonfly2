@@ -60,9 +60,9 @@ type ObjectMetadata struct {
 
 type ObjectMetadatas struct {
 	// CommonPrefixes are similar prefixes in object storage.
-	CommonPrefixes []string
+	CommonPrefixes []string `json:"CommonPrefixes"`
 
-	Metadatas []*ObjectMetadata
+	Metadatas []*ObjectMetadata `json:"Metadatas"`
 }
 
 // BucketMetadata provides metadata of bucket.
