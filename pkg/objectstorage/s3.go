@@ -154,7 +154,7 @@ func (s *s3) GetObjectMetadatas(ctx context.Context, bucketName, prefix, marker,
 		commonPrefixes[i] = prefix.GoString()
 	}
 	return &ObjectMetadatas{
-		metadatas:      metadatas,
+		Metadatas:      metadatas,
 		CommonPrefixes: commonPrefixes,
 	}, nil
 }

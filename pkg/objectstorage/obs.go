@@ -149,7 +149,7 @@ func (o *obs) GetObjectMetadatas(ctx context.Context, bucketName, prefix, marker
 	}
 
 	return &ObjectMetadatas{
-		metadatas:      metadatas,
+		Metadatas:      metadatas,
 		CommonPrefixes: resp.CommonPrefixes,
 	}, nil
 }
