@@ -20,9 +20,11 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"net/http"
 	"strings"
 	"time"
 
+	"d7y.io/dragonfly/v2/client/config"
 	huaweiobs "github.com/huaweicloud/huaweicloud-sdk-go-obs/obs"
 )
 
@@ -32,8 +34,18 @@ type obs struct {
 }
 
 // New oss instance.
-func newOBS(region, endpoint, accessKey, secretKey string) (ObjectStorage, error) {
-	client, err := huaweiobs.New(accessKey, secretKey, endpoint)
+func newOBS(region, endpoint, accessKey, secretKey, scheme string) (ObjectStorage, error) {
+
+	var (
+		client *huaweiobs.ObsClient
+		err    error
+	)
+
+	if scheme == config.SchemaHTTP {
+		client, err = huaweiobs.New(accessKey, secretKey, endpoint, huaweiobs.WithHttpTransport(http.DefaultTransport.(*http.Transport)))
+	} else {
+		client, err = huaweiobs.New(accessKey, secretKey, endpoint)
+	}
 	if err != nil {
 		return nil, fmt.Errorf("new obs client failed: %s", err)
 	}

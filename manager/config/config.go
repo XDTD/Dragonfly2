@@ -337,6 +337,9 @@ type ObjectStorageConfig struct {
 	// (`http://BUCKET.s3.amazonaws.com/KEY`).
 	// Refer to https://github.com/aws/aws-sdk-go/blob/main/aws/config.go#L118.
 	S3ForcePathStyle bool `mapstructure:"s3ForcePathStyle" yaml:"s3ForcePathStyle"`
+
+	// Scheme is the protocol used by objectStorage client.
+	Scheme string `yaml:"scheme" mapstructure:"scheme"`
 }
 
 type SecurityConfig struct {
@@ -447,6 +450,7 @@ func New() *Config {
 		ObjectStorage: ObjectStorageConfig{
 			Enable:           false,
 			S3ForcePathStyle: true,
+			Scheme:           DefaultObjectStorageScheme,
 		},
 		Security: SecurityConfig{
 			AutoIssueCert: false,
@@ -646,6 +650,10 @@ func (cfg *Config) Validate() error {
 
 		if cfg.ObjectStorage.SecretKey == "" {
 			return errors.New("objectStorage requires parameter secretKey")
+		}
+
+		if !slices.Contains([]string{"http", "https"}, cfg.ObjectStorage.Scheme) {
+			return errors.New("objectStorage requires parameter scheme")
 		}
 	}
 

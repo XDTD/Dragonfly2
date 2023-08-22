@@ -144,6 +144,7 @@ func New(cfg *config.Config, d dfpath.Dfpath) (*Server, error) {
 			cfg.ObjectStorage.AccessKey,
 			cfg.ObjectStorage.SecretKey,
 			objectstorage.WithS3ForcePathStyle(cfg.ObjectStorage.S3ForcePathStyle),
+			objectstorage.WithScheme(cfg.ObjectStorage.Scheme),
 		)
 		if err != nil {
 			return nil, err

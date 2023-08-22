@@ -142,3 +142,8 @@ var (
 	// DefaultTrainerBucketName is default object storage bucket name of model.
 	DefaultTrainerBucketName = "models"
 )
+
+var (
+	// DefaultObjectStorageScheme is the default scheme for objectStorage client.
+	DefaultObjectStorageScheme = "http"
+)

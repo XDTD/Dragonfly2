@@ -20,10 +20,12 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"net/http"
 	"net/url"
 	"path"
 	"time"
 
+	"d7y.io/dragonfly/v2/client/config"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/credentials"
@@ -38,8 +40,11 @@ type s3 struct {
 }
 
 // New s3 instance.
-func newS3(region, endpoint, accessKey, secretKey string, s3ForcePathStyle bool) (ObjectStorage, error) {
+func newS3(region, endpoint, accessKey, secretKey string, s3ForcePathStyle bool, scheme string) (ObjectStorage, error) {
 	cfg := aws.NewConfig().WithCredentials(credentials.NewStaticCredentials(accessKey, secretKey, ""))
+	if scheme == config.SchemaHTTP {
+		cfg = cfg.WithHTTPClient(http.DefaultClient)
+	}
 	s, err := session.NewSession(cfg)
 	if err != nil {
 		return nil, fmt.Errorf("new aws session failed: %s", err)

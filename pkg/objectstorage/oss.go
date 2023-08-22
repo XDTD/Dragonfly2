@@ -25,6 +25,7 @@ import (
 	"strconv"
 	"time"
 
+	"d7y.io/dragonfly/v2/client/config"
 	aliyunoss "github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/go-http-utils/headers"
 )
@@ -35,8 +36,15 @@ type oss struct {
 }
 
 // New oss instance.
-func newOSS(region, endpoint, accessKey, secretKey string) (ObjectStorage, error) {
-	client, err := aliyunoss.New(endpoint, accessKey, secretKey, aliyunoss.Region(region))
+func newOSS(region, endpoint, accessKey, secretKey, scheme string) (ObjectStorage, error) {
+	options := []aliyunoss.ClientOption{
+		aliyunoss.Region(region),
+	}
+	if scheme == config.SchemaHTTP {
+		options = append(options, aliyunoss.HTTPClient(http.DefaultClient))
+	}
+
+	client, err := aliyunoss.New(endpoint, accessKey, secretKey, options...)
 	if err != nil {
 		return nil, fmt.Errorf("new oss client failed: %s", err)
 	}

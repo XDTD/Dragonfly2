@@ -135,6 +135,9 @@ type objectStorage struct {
 
 	// secretKey is access key secret.
 	s3ForcePathStyle bool
+
+	// scheme is http scheme.
+	scheme string
 }
 
 // Option is a functional option for configuring the objectStorage.
@@ -144,6 +147,12 @@ type Option func(o *objectStorage)
 func WithS3ForcePathStyle(s3ForcePathStyle bool) Option {
 	return func(o *objectStorage) {
 		o.s3ForcePathStyle = s3ForcePathStyle
+	}
+}
+
+func WithScheme(scheme string) Option {
+	return func(o *objectStorage) {
+		o.scheme = scheme
 	}
 }
 
@@ -164,11 +173,11 @@ func New(name, region, endpoint, accessKey, secretKey string, options ...Option)
 
 	switch o.name {
 	case ServiceNameS3:
-		return newS3(o.region, o.endpoint, o.accessKey, o.secretKey, o.s3ForcePathStyle)
+		return newS3(o.region, o.endpoint, o.accessKey, o.secretKey, o.s3ForcePathStyle, o.scheme)
 	case ServiceNameOSS:
-		return newOSS(o.region, o.endpoint, o.accessKey, o.secretKey)
+		return newOSS(o.region, o.endpoint, o.accessKey, o.secretKey, o.scheme)
 	case ServiceNameOBS:
-		return newOBS(o.region, o.endpoint, o.accessKey, o.secretKey)
+		return newOBS(o.region, o.endpoint, o.accessKey, o.secretKey, o.scheme)
 	}
 
 	return nil, fmt.Errorf("unknow service name %s", name)
