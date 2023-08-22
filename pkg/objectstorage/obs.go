@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"d7y.io/dragonfly/v2/client/config"
+	"github.com/XDTD/Dragonfly2/client/config"
 	huaweiobs "github.com/huaweicloud/huaweicloud-sdk-go-obs/obs"
 )
 

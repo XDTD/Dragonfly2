@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"time"
 
-	"d7y.io/dragonfly/v2/client/config"
+	"github.com/XDTD/Dragonfly2/client/config"
 	aliyunoss "github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/go-http-utils/headers"
 )
@@ -41,6 +41,7 @@ func newOSS(region, endpoint, accessKey, secretKey, scheme string) (ObjectStorag
 		aliyunoss.Region(region),
 	}
 	if scheme == config.SchemaHTTP {
+		logger.Printf("[TDDDD], scheme, %s", scheme)
 		options = append(options, aliyunoss.HTTPClient(http.DefaultClient))
 	}
 

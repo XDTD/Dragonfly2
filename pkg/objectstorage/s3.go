@@ -25,7 +25,7 @@ import (
 	"path"
 	"time"
 
-	"d7y.io/dragonfly/v2/client/config"
+	"github.com/XDTD/Dragonfly2/client/config"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/credentials"
