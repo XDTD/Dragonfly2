@@ -24,7 +24,7 @@ import (
 
 	testifyassert "github.com/stretchr/testify/assert"
 
-	"d7y.io/dragonfly/v2/client/util"
+	"github.com/XDTD/Dragonfly2/client/util"
 )
 
 func TestDfgetConfig_Validate(t *testing.T) {
