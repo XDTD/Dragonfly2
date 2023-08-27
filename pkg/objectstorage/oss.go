@@ -41,7 +41,7 @@ func newOSS(region, endpoint, accessKey, secretKey, scheme string) (ObjectStorag
 		aliyunoss.Region(region),
 	}
 	if scheme == config.SchemaHTTP {
-		logger.Printf("[TDDDD], scheme, %s", scheme)
+		// logger.Printf("[TDDDD], scheme, %s", scheme)
 		options = append(options, aliyunoss.HTTPClient(http.DefaultClient))
 	}
 
